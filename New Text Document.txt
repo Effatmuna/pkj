@@ -1,0 +1,690 @@
+     input format
+
+    <input type="button">
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="month">
+    <input type="number">
+    <input type="password">
+    <input type="radio">
+    <input type="range">
+    <input type="reset">
+    <input type="search">
+    <input type="submit">
+    <input type="tel">
+    <input type="text"> (default value)
+    <input type="time">
+    <input type="url">
+    <input type="week">
+
+
+     Text formatting
+
+
+    <b> - Bold text
+    <strong> - Important text
+    <i> - Italic text
+    <em> - Emphasized text
+    <mark> - Marked text
+    <small> - Smaller text
+    <del> - Deleted text
+    <ins> - Inserted text
+    <sub> - Subscript text
+    <sup> - Superscript text
+
+
+     Text-effect
+       
+    text-overflow
+    word-wrap
+    word-break
+    writing-mode
+
+
+   https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/brands.min.css
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css" integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+https://www.youtube.com/watch?v=Jydr0kw5LYA
+*d-block d-lg-flex for same width of cards
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+//SQL
+ALTER TABLE ADD - For adding column in Tables;
+ALTER TABLE DROP - For deleting column from Tables;
+
+% - find any character from table
+____-month% - for finding birthdate
+
+UNION- to collect all the list;
+AS - to change column name
+JOIN - to join data of two tables
+NESTED QUERIES
+AUTO_INCREMENT
+SET,
+ORDER BY,
+UPDATE,
+DISTINCT,
+COUNT() FROM ...,
+GROUP BY - SElect datas diffently,
+ON DELETE CASCADE - delele all the data from table
+ON DELETE SET NULL - after deleting data from table set here "NULL";
+<> - for clearing data
+
+DELIMITER  $$ - showing message before adding any data in a table
+CREATE TRIGGER my_trigger BEFORE INSERT
+ON employee FOR EACH ROW BEGIN 
+INSERT INTO trigger_text VALUES("added new employee");
+
+END$$
+DELIMITER ;
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css"
+      integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+      integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+
+ <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.0/semantic.min.css"
+    />
+
+
+//Showing video
+curl 'https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery' -H 'X-Market-User-Id: dfeb9512-24ef-4f7b-a5e7-838006ffe957' -H 'Accept: application/json;api-version=3.0-preview.1' -H 'Origin: file://' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.36.1 Chrome/69.0.3497.128 Electron/4.2.5 Safari/537.36' -H 'X-Market-Client-Id: VSCode 1.36.1' -H 'Content-Type: application/json' --data-binary '{"filters":[{"criteria":[{"filterType":8,"value":"Microsoft.VisualStudio.Code"},{"filterType":12,"value":"4096"},{"filterType":10,"value":"test"}],"pageNumber":1,"pageSize":50,"sortBy":0,"sortOrder":0}],"assetTypes":[],"flags":914}' --compressed
+
+ $(function(){
+      $(".video").click(function()
+      {
+        var theModal= $(this).data("target"),
+        videoSRC =$(this).attr("data-video"),
+        videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html15=1&audioplay=1"
+        $(theModal + " iframe").attr("src", videoSRCauto);
+        $(theModal + button.close).click(function(){
+          $(theModal + "iframe").attr("src", videoSRC);
+        })
+      })
+   });
+
+//Tooltip
+    $("[data-toggle] ="tooltip"]").tooltip();
+
+
+//SCROLLSPY
+$("body).scrollspy({target: #main-nav});
+
+//Full Year
+date.innerHTML = new date().getFullYear();
+
+
+
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+      integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha512-ldc1sPu1FZ8smgkgp+HwnYyVb1eRn2wEmKrDg1JqPEb02+Ei4kNzDIQ0Uwh0AJVLQFjJoWwG+764x70zy5Tv4A=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+
+ //for text editing
+
+  <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+
+//https://builtbybritt.com/
+
+
+link
+https://www.youtube.com/watch?v=YzRDHxbw1RU
+
+
+   //uploading files in github
+$ git config --global user.name "Effatmuna"
+
+
+$ git config --global user.email "effatmuna68@gmail.com"
+
+
+$ git clone https://github.com/Effatmuna/S-CartB
+
+
+
+$ cd S-CartB
+
+
+$ git status
+
+$ git add .
+
+
+$ git commit -m "My Project"
+
+$ git push origin master
+
+
+
+$
+
+
+//GitHub upload
+Computer Source@DESKTOP-C306M5G MINGW64 ~/Desktop
+$ git config --global user.name "Effatmuna"
+
+Computer Source@DESKTOP-C306M5G MINGW64 ~/Desktop
+$ git config --global user.email "effatmuna68@gmail.com"
+
+Computer Source@DESKTOP-C306M5G MINGW64 ~/Desktop
+$ cd Cart-D/
+
+Computer Source@DESKTOP-C306M5G MINGW64 ~/Desktop/Cart-D
+$ /Cart-D$ ls
+bash: /Cart-D$: No such file or directory
+
+Computer Source@DESKTOP-C306M5G MINGW64 ~/Desktop/Cart-D
+$ git init
+Initialized empty Git repository in C:/Users/Computer Source/Desktop/Cart-D/.git/
+
+Computer Source@DESKTOP-C306M5G MINGW64 ~/Desktop/Cart-D (master)
+$ git add .
+
+Computer Source@DESKTOP-C306M5G MINGW64 ~/Desktop/Cart-D (master)
+$ git commit -m "Project-submit"
+[master (root-commit) eb7e46c] Project-submit
+ 9 files changed, 362 insertions(+)
+ create mode 100644 css/style.css
+ create mode 100644 index.html
+ create mode 100644 logo.jpg
+ create mode 100644 mlogo.png
+ create mode 100644 shoe-1.jpg
+ create mode 100644 shoe-2.jpg
+ create mode 100644 shoe-3.jpg
+ create mode 100644 shoe-5.jpg
+ create mode 100644 shoe-logo.png
+
+Computer Source@DESKTOP-C306M5G MINGW64 ~/Desktop/Cart-D (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Computer Source@DESKTOP-C306M5G MINGW64 ~/Desktop/Cart-D (master)
+$ git remote add origin https://github.com/Effatmuna/Cart-D.git
+
+Computer Source@DESKTOP-C306M5G MINGW64 ~/Desktop/Cart-D (master)
+$ git push -u origin master
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (12/12), 7.20 MiB | 354.00 KiB/s, done.
+Total 12 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Effatmuna/Cart-D.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Computer Source@DESKTOP-C306M5G MINGW64 ~/Desktop/Cart-D (master)
+$
+https://www.landresellers.com/properties/rare-crescent-valley-town-lot-move-in-ready-all-utilities-installed-inc
+
+
+
+//Single Source 
+#include <iostream>
+using namespace std;
+#include <limits.h>
+ 
+// Number of vertices in the graph
+#define V 9
+ 
+// A utility function to find the vertex with minimum distance value, from
+// the set of vertices not yet included in shortest path tree
+int minDistance(int dist[], bool sptSet[])
+{
+   
+    // Initialize min value
+    int min = INT_MAX, min_index;
+ 
+    for (int v = 0; v < V; v++)
+        if (sptSet[v] == false && dist[v] <= min)
+            min = dist[v], min_index = v;
+ 
+    return min_index;
+}
+ 
+// A utility function to print the constructed distance array
+void printSolution(int dist[])
+{
+    cout <<"Vertex \t Distance from Source" << endl;
+    for (int i = 0; i < V; i++)
+        cout  << i << " \t\t"<<dist[i]<< endl;
+}
+ 
+// Function that implements Dijkstra's single source shortest path algorithm
+// for a graph represented using adjacency matrix representation
+void dijkstra(int graph[V][V], int src)
+{
+    int dist[V]; // The output array.  dist[i] will hold the shortest
+    // distance from src to i
+ 
+    bool sptSet[V]; // sptSet[i] will be true if vertex i is included in shortest
+    // path tree or shortest distance from src to i is finalized
+ 
+    // Initialize all distances as INFINITE and stpSet[] as false
+    for (int i = 0; i < V; i++)
+        dist[i] = INT_MAX, sptSet[i] = false;
+ 
+    // Distance of source vertex from itself is always 0
+    dist[src] = 0;
+ 
+    // Find shortest path for all vertices
+    for (int count = 0; count < V - 1; count++) {
+        // Pick the minimum distance vertex from the set of vertices not
+        // yet processed. u is always equal to src in the first iteration.
+        int u = minDistance(dist, sptSet);
+ 
+        // Mark the picked vertex as processed
+        sptSet[u] = true;
+ 
+        // Update dist value of the adjacent vertices of the picked vertex.
+        for (int v = 0; v < V; v++)
+ 
+            // Update dist[v] only if is not in sptSet, there is an edge from
+            // u to v, and total weight of path from src to  v through u is
+            // smaller than current value of dist[v]
+            if (!sptSet[v] && graph[u][v] && dist[u] != INT_MAX
+                && dist[u] + graph[u][v] < dist[v])
+                dist[v] = dist[u] + graph[u][v];
+    }
+ 
+    // print the constructed distance array
+    printSolution(dist);
+}
+ 
+// driver program to test above function
+int main()
+{
+   
+    /* Let us create the example graph discussed above */
+    int graph[V][V] = { { 0, 4, 0, 0, 0, 0, 0, 8, 0 },
+                        { 4, 0, 8, 0, 0, 0, 0, 11, 0 },
+                        { 0, 8, 0, 7, 0, 4, 0, 0, 2 },
+                        { 0, 0, 7, 0, 9, 14, 0, 0, 0 },
+                        { 0, 0, 0, 9, 0, 10, 0, 0, 0 },
+                        { 0, 0, 4, 14, 10, 0, 2, 0, 0 },
+                        { 0, 0, 0, 0, 0, 2, 0, 1, 6 },
+                        { 8, 11, 0, 0, 0, 0, 1, 0, 7 },
+                        { 0, 0, 2, 0, 0, 0, 6, 7, 0 } };
+ 
+    dijkstra(graph, 0);
+ 
+    return 0;
+}
+// A C++ program for Prim's Minimum
+// Spanning Tree (MST) algorithm. The program is
+// for adjacency matrix representation of the graph
+#include <bits/stdc++.h>
+using namespace std;
+ 
+// Number of vertices in the graph
+#define V 5
+ 
+// A utility function to find the vertex with
+// minimum key value, from the set of vertices
+// not yet included in MST
+int minKey(int key[], bool mstSet[])
+{
+    // Initialize min value
+    int min = INT_MAX, min_index;
+ 
+    for (int v = 0; v < V; v++)
+        if (mstSet[v] == false && key[v] < min)
+            min = key[v], min_index = v;
+ 
+    return min_index;
+}
+ //Minimum Spanning Tree
+// A utility function to print the
+// constructed MST stored in parent[]
+void printMST(int parent[], int graph[V][V])
+{
+    cout<<"Edge \tWeight\n";
+    for (int i = 1; i < V; i++)
+        cout<<parent[i]<<" - "<<i<<" \t"<<graph[i][parent[i]]<<" \n";
+}
+ 
+// Function to construct and print MST for
+// a graph represented using adjacency
+// matrix representation
+void primMST(int graph[V][V])
+{
+    // Array to store constructed MST
+    int parent[V];
+     
+    // Key values used to pick minimum weight edge in cut
+    int key[V];
+     
+    // To represent set of vertices included in MST
+    bool mstSet[V];
+ 
+    // Initialize all keys as INFINITE
+    for (int i = 0; i < V; i++)
+        key[i] = INT_MAX, mstSet[i] = false;
+ 
+    // Always include first 1st vertex in MST.
+    // Make key 0 so that this vertex is picked as first vertex.
+    key[0] = 0;
+    parent[0] = -1; // First node is always root of MST
+ 
+    // The MST will have V vertices
+    for (int count = 0; count < V - 1; count++)
+    {
+        // Pick the minimum key vertex from the
+        // set of vertices not yet included in MST
+        int u = minKey(key, mstSet);
+ 
+        // Add the picked vertex to the MST Set
+        mstSet[u] = true;
+ 
+        // Update key value and parent index of
+        // the adjacent vertices of the picked vertex.
+        // Consider only those vertices which are not
+        // yet included in MST
+        for (int v = 0; v < V; v++)
+ 
+            // graph[u][v] is non zero only for adjacent vertices of m
+            // mstSet[v] is false for vertices not yet included in MST
+            // Update the key only if graph[u][v] is smaller than key[v]
+            if (graph[u][v] && mstSet[v] == false && graph[u][v] < key[v])
+                parent[v] = u, key[v] = graph[u][v];
+    }
+ 
+    // print the constructed MST
+    printMST(parent, graph);
+}
+ 
+// Driver code
+int main()
+{
+    /* Let us create the following graph
+        2 3
+    (0)--(1)--(2)
+    | / \ |
+    6| 8/ \5 |7
+    | / \ |
+    (3)-------(4)
+            9     */
+    int graph[V][V] = { { 0, 2, 0, 6, 0 },
+                        { 2, 0, 3, 8, 5 },
+                        { 0, 3, 0, 0, 7 },
+                        { 6, 8, 0, 0, 9 },
+                        { 0, 5, 7, 9, 0 } };
+ 
+    // Print the solution
+    primMST(graph);
+ 
+    return 0;
+}
+ 
+// This code is contributed by rathbhupendra
+
+Output: 
+
+Edge   Weight
+0 - 1    2
+1 - 2    3
+0 - 3    6
+1 - 4    5
+
+
+#include <iostream>
+#include <climits>
+using namespace std;
+ 
+// Function to find the most efficient way to multiply
+// a given sequence of matrices
+int matrixChainMultiplication(int dims[], int i, int j)
+{
+    // base case: one matrix
+    if (j <= i + 1) {
+        return 0;
+    }
+ 
+    // stores the minimum number of scalar multiplications (i.e., cost)
+    // needed to compute matrix `M[i+1] … M[j] = M[i…j]`
+    int min = INT_MAX;
+ 
+    // take the minimum over each possible position at which the
+    // sequence of matrices can be split
+ 
+    /*
+        (M[i+1]) × (M[i+2]………………M[j])
+        (M[i+1]M[i+2]) × (M[i+3…………M[j])
+        …
+        …
+        (M[i+1]M[i+2]…………M[j-1]) × (M[j])
+    */
+ 
+    for (int k = i + 1; k <= j - 1; k++)
+    {
+        // recur for `M[i+1]…M[k]` to get an `i × k` matrix
+        int cost = matrixChainMultiplication(dims, i, k);
+ 
+        // recur for `M[k+1]…M[j]` to get an `k × j` matrix
+        cost += matrixChainMultiplication(dims, k, j);
+ 
+        // cost to multiply two `i × k` and `k × j` matrix
+        cost +=    dims[i] * dims[k] * dims[j];
+ 
+        if (cost < min) {
+            min = cost;
+        }
+    }
+ 
+    // return the minimum cost to multiply `M[j+1]…M[j]`
+    return min;
+}
+ 
+// Matrix Chain Multiplication Problem
+int main()
+{
+    // Matrix `M[i]` has dimension `dims[i-1] × dims[i]` for `i = 1…n`
+    // input is `10 × 30` matrix, `30 × 5` matrix, `5 × 60` matrix
+    int dims[] = { 10, 30, 5, 60 };
+    int n = sizeof(dims) / sizeof(dims[0]);
+ 
+    cout << "The minimum cost is " << matrixChainMultiplication(dims, 0, n - 1);
+ 
+    return 0;
+}
+
+output: The minimum cost is 4500
+
+
+
+//bFS
+#include <iostream>
+#include <queue>
+#define SIZE 5
+using namespace std;
+
+//vertices
+char vertices[SIZE] = {'A', 'B', 'C', 'D', 'E'};
+//array mapping to mark visited vertices
+int  visited[SIZE] = {0};
+//Adjacency Matrix (Graph)
+int adjacencyM[SIZE][SIZE] = {{0, 1, 1, 0, 0},
+                              {1, 0, 0, 1, 0},
+                              {1, 0, 0, 0, 1},
+                              {0, 1, 0 ,0, 0},
+                              {0, 1, 1, 0, 0}};
+ 
+class BFS{
+public:
+  void solve(int root){
+    queue<int> Queue;
+
+    //Visit root node and add to the queue
+    visited[root] = 1;
+    Queue.push(root);
+   
+    //BFS until queue is empty
+    while(!Queue.empty()){
+      //Pop the vertex and display
+      int current_vertex= Queue.front();
+      Queue.pop();
+      cout << vertices[current_vertex] << " ";
+
+      //add connected non-visited vertices to the queue
+      int neighbor_Vertex;
+      while((neighbor_Vertex =unvisitedNeighbor(current_vertex)) != -1){
+        //Mark neighbors as visited
+        visited[neighbor_Vertex] = 1;
+        Queue.push(neighbor_Vertex);
+      }
+    }
+
+  }
+  
+  //Function returns index of unvisited connected vertices
+  int unvisitedNeighbor(int index){
+    for(int i=0; i<SIZE; i++){
+      if(adjacencyM[index][i] == 1 && (visited[i] == 0)){
+        return i;
+      }
+    }
+    return -1;
+  }
+};
+ 
+//Driver Code 
+int main() {
+    BFS bfs;
+    bfs.solve(0);
+    return 0;
+}
+
+Output:
+A B C D E
+
+
+
+//DFS
+// C++ program to print DFS traversal from
+// a given vertex in a  given graph
+#include <bits/stdc++.h>
+using namespace std;
+  
+// Graph class represents a directed graph
+// using adjacency list representation
+class Graph 
+{
+public:
+    map<int, bool> visited;
+    map<int, list<int>> adj;
+  
+    // function to add an edge to graph
+    void addEdge(int v, int w);
+  
+    // DFS traversal of the vertices
+    // reachable from v
+    void DFS(int v);
+};
+  
+void Graph::addEdge(int v, int w)
+{
+    adj[v].push_back(w); // Add w to v’s list.
+}
+  
+void Graph::DFS(int v)
+{
+    // Mark the current node as visited and
+    // print it
+    visited[v] = true;
+    cout << v << " ";
+  
+    // Recur for all the vertices adjacent
+    // to this vertex
+    list<int>::iterator i;
+    for (i = adj[v].begin(); i != adj[v].end(); ++i)
+        if (!visited[*i])
+            DFS(*i);
+}
+  
+// Driver code
+int main()
+{
+    // Create a graph given in the above diagram
+    Graph g;
+    g.addEdge(0, 1);
+    g.addEdge(0, 2);
+    g.addEdge(1, 2);
+    g.addEdge(2, 0);
+    g.addEdge(2, 3);
+    g.addEdge(3, 3);
+  
+    cout << "Following is Depth First Traversal"
+            " (starting from vertex 2) \n";
+    g.DFS(2);
+  
+    return 0;
+}
+  
+// improved by Vishnudev C
+
+Output: 
+
+Following is Depth First Traversal (starting from vertex 2)
+2 0 1 3

@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clock {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 20px solid rgb(7, 7, 7);
+  border-radius: 50%;
+  box-shadow: 0px 2vw 4vw -1vw black;
+  background: rgb(66, 65, 65);
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgb(7, 7, 7);
+  z-index: 10;
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  box-shadow: 0px 2px 4px -1px black;
+}
+.hour-hand {
+  position: absolute;
+  z-index: 7;
+  width: 4px;
+  height: 65px;
+  background: black;
+  top: 59px;
+  transform-origin: 50% 72px;
+  left: 50%;
+  margin-left: -2px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.minute-hand {
+  position: absolute;
+  z-index: 6;
+  width: 4px;
+  height: 100px;
+  background: dimgrey;
+  top: 27px;
+  left: 50%;
+  margin-left: -2px;
+  transform-origin: 50% 105px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.second-hand {
+  position: absolute;
+  z-index: 5;
+  width: 2px;
+  height: 120px;
+  background-color: red;
+  top: 6px;
+  left: 50%;
+  margin-left: -1px;
+  transform-origin: 50% 125px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+span {
+  display: inline-block;
+  position: absolute;
+  z-index: 4;
+  font-weight: 700;
+}
+.h1 {
+  top: 30px;
+  left: 50%;
+  margin-left: -9px;
+}
+.h2 {
+  top: 120px;
+  right: 30px;
+}
+.h3 {
+  bottom: 30px;
+  left: 50%;
+  margin-left: -5px;
+}
+.h4 {
+  top: 120px;
+  left: 32px;
+  margin-right: -7px;
+}
+.dialines {
+  position: absolute;
+  z-index: 2;
+  width: 2px;
+  height: 15px;
+  background: rgb(224, 25, 25);
+  left: 50%;
+  margin-left: -1px;
+  transform-origin: 50%, 150px;
+}
+.dialines:nth-of-type(5n) {
+  position: absolute;
+  z-index: 2;
+  width: 4px;
+  height: 15px;
+  background: black;
+  left: 100px;
+  margin-left: -1px;
+  transform-origin: 50%, 200px;
+}
+
+.date {
+  position: absolute;
+  width: 60px;
+  height: 16px;
+  border-radius: 7px;
+  background-color: rgb(7, 7, 7);
+  text-align: center;
+  color: #fff;
+  font-size: 11px;
+  top: 55px;
+  left: 62%;
+  margin-left: -60px;
+  z-index: 4;
+  line-height: 20px;
+}
+.day {
+  position: absolute;
+  width: 60px;
+  height: 15px;
+  border-radius: 7px;
+  background-color: rgb(7, 7, 7);
+  text-align: center;
+  color: #fff;
+  font-size: 11px;
+  bottom: 55px;
+  left: 62%;
+  margin-left: -60px;
+  z-index: 5;
+}
+
+/*
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: -moz-radial-gradient(
+    center,
+    circle closet-corner,
+    #353863 0%,
+    #000 100%
+  );
+  background-image: -o-radial-gradient(
+    center,
+    circle closet-corner,
+    #353863 0%,
+    #000 100%
+  );
+  background-image: -webkit-radial-gradient(
+    center,
+    circle closet-corner,
+    #353863 0%,
+    #000 100%
+  );
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.container {
+  width: 240px;
+  height: auto;
+  margin: 5% auto;
+  background: rgb(224, 216, 216);
+  border-radius: 15px;
+  font-weight: bold;
+}
+.screen {
+  margin: 20px 0px 0px 15px;
+  padding-right: 5px;
+  height: 54px;
+  width: 88%;
+  background: #858585;
+  text-align: right;
+  font-size: 20px;
+  border: 1px solid rgb(15, 124, 124);
+  border-radius: 6px;
+  box-shadow: inset 0px 0px 10px rgb(56, 54, 54);
+}
+.screen:focus {
+  outline: none;
+}
+.buttons {
+  width: 220px;
+  margin: 12px;
+}
+.buttons button {
+  width: 45px;
+  height: 45px;
+  margin-left: -5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: rgb(53, 77, 92);
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+}
+.buttons:button:active {
+  color: #fff;
+  border: 1px solid #333;
+}
+#clear {
+  background: cornflowerblue;
+  border: 1px solid cornflowerblue;
+}
+#equal {
+  width: 100px;
+  background: cornflowerblue;
+  border: 1px solid cornflowerblue;
+  box-shadow: inset 0px 0px 3px rgb(110, 129, 163);
+}
+#equal:active {
+  border: 1px solid black;
+}
+#minus,
+#plus,
+#multiply,
+#devide {
+  background: cornflowerblue;
+  border: 1px solid cornflowerblue;
+  box-shadow: 0px 0px 3px rgb(110, 129, 163);
+}
+#minus:active,
+#plus:active,
+#multiply:active,
+#devide:active {
+  border: 1px solid black;
+}
+*/

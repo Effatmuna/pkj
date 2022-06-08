@@ -1,0 +1,114 @@
+/*
+* {
+  margin: 0;
+  padding: 0;
+}
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.button a {
+  text-decoration: none;
+  padding: 30px 50px 30px 50px;
+  box-shadow: 0px 0px 10px grey;
+  margin: 20px;
+  border-radius: 5px;
+  font-size: 30px;
+  color: white;
+}
+
+.button a:nth-child(1) {
+  background: rgb(3, 102, 141);
+}
+.button a:hover {
+  transform: rotateX(120deg);
+}
+.button a:nth-child(2) {
+  background: cyan;
+}
+.modal-content {
+  position: fixed;
+  width: 400px;
+  height: 100px;
+  left: 50%;
+  background: white;
+  box-shadow: 0px 0px 10px black;
+  transform: translate(-50%, -200%);
+}
+.modal-content a {
+  position: absolute;
+  top: 50px;
+  margin: 10px;
+  text-decoration: none;
+  padding: 10px;
+  box-shadow: 0px 0px 5px grey;
+  color: black;
+  transition: 0.5s;
+  border-radius: 5px;
+  transition-property: transforms;
+  font-size: 16px;
+}
+.modal::before {
+  content: "";
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal:target::before {
+  display: block;
+}
+.modal:target .modal-content {
+  transform: translate(-50%, 0%);
+}
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box:hover .box-content {
+  transform: rotateY(180deg);
+}
+.box-content {
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.box-front,
+.box-back {
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  color: white;
+  position: absolute;
+}
+.box-front p {
+  font-size: 50px;
+  text-align: center;
+}
+.box-front h3 {
+  font-size: 30px;
+  text-align: center;
+}
+.box-back {
+  background: dimgray;
+  transform: rotateY(180deg);
+}
+.box-front {
+  background: cadetblue;
+}

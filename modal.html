@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css"
+      integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+      integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Shoytan Beta</title>
+  </head>
+
+  <body>
+    <div class="middle">
+      <h4>Hey,Matha Noshto</h4>
+      <button class="button1">Click Here</button>
+    </div>
+    <div class="modal1 hidden">
+      <h3>Happy Birthday💌</h3>
+
+      <p>
+        I love you I love you I just love you betaaaaaa😘 I fall deeper in love
+        with you each day,as you're the other half that completes me.You are the
+        best.Well, it's not a love letter by the way🤭😆 Happy happy birthday
+        betaaaaa. Wishing you all the happiness in life.May each day's journey
+        bring you closer to your dreams.May allah help you.Keep shining my love.
+      </p>
+    </div>
+
+    <div class="overlay1 hidden"></div>
+
+    <script>
+      const modal1 = document.querySelector(".modal1");
+      const hidden = document.querySelectorAll(".hidden");
+      const overlay1 = document.querySelector(".overlay1");
+      const closeModal = document.querySelector(".close-modal");
+      const button1 = document.querySelector(".button1");
+
+      button1.addEventListener("click", function () {
+        modal1.classList.remove("hidden");
+        overlay1.classList.remove("hidden");
+      });
+      modal1.addEventListener("click", function () {
+        modal1.classList.add("hidden");
+        overlay1.classList.add("hidden");
+      });
+      overlay1.addEventListener("click", function () {
+        modal1.classList.add("hidden");
+        overlay1.classList.add("hidden");
+      });
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+      integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha512-ldc1sPu1FZ8smgkgp+HwnYyVb1eRn2wEmKrDg1JqPEb02+Ei4kNzDIQ0Uwh0AJVLQFjJoWwG+764x70zy5Tv4A=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
